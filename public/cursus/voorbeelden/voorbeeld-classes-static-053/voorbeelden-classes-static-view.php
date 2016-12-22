@@ -1,3 +1,4 @@
+<?php 	require_once 'voorbeelden-classes-static.php'; ?>
 <!doctype html>
 <html>
 <head>
@@ -20,7 +21,7 @@
 				<li><?php echo $message ?></li>
 			<?php endforeach ?>
 		</ul>
-		
+
 	</section>
 
 </body>
