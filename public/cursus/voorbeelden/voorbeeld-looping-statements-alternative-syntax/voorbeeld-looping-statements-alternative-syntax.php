@@ -1,6 +1,7 @@
 <?php
-	
-	$autos 			= 	array( 'Volvo', 'Porsche', 'Honda', 'Pagani', 'Peugot', 'Nissan', 'Volkswagen' );	
+	$i = 0;
+	$j = 0;
+	$autos 			= 	array( 'Volvo', 'Porsche', 'Honda', 'Pagani', 'Peugot', 'Nissan', 'Volkswagen' );
 
 ?>
 
@@ -25,6 +26,7 @@
 
 			<?php foreach( $autos as $auto) { ?>
 				<li><?= $autos[$i] ?></li>
+				<?php $i++; ?>
 			<?php } ?>
 		</ul>
 
@@ -32,10 +34,12 @@
 		<ul>
 
 			<?php foreach( $autos as $auto): ?>
-				<li><?= $autos[$i] ?></li>
+
+				<li><?= $autos[$j] ?></li>
+				<?php $j++; ?>
 			<?php endforeach ?>
 		</ul>
-		
+
 	</section>
 
 </body>
